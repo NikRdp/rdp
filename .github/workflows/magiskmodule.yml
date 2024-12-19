@@ -1,4 +1,4 @@
-Name: Free RDP Tunnel by revWhiteShadow at magiskmodule.gitlab.io
+iName: Free RDP Tunnel by revWhiteShadow at magiskmodule.gitlab.io
 
 on: workflow_dispatch
 
@@ -39,7 +39,7 @@ jobs:
         run: |
           Start-Process -FilePath "$env:USERPROFILE\playit.exe" -ArgumentList "--secret", "$env:PLAYIT_AUTH_KEY", "-NoNewWindow", "-Wait"
           Start-Process -FilePath "$env:USERPROFILE\playit.exe" -NoNewWindow
-
-- name: Keep the GitHub Action Runner Alive
-  run: |
-    Start-Sleep -Seconds 11800  # Adjust the duration based on your needs
+          
+      - name: Keep the GitHub Action Runner Alive
+        run: |
+          Start-Sleep -Seconds 11800  # Adjust the duration based on your needs
