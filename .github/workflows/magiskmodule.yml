@@ -31,7 +31,7 @@ jobs:
 
       - name: Set RDP Password
         run: |
-          Set-LocalUser -Name "AdminNik" -Password (ConvertTo-SecureString -AsPlainText "Nik@12345" -Force)
+          Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Nik@12345" -Force)
 
       - name: Start Playit and Set Up RDP Tunnel
         env:
